@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap'); /* Using Lato as a fallback if Lota isn't available */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Lota', 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  overflow-y: auto;
+  font-family: 'Lota', 'Lato', sans-serif;
+}
+
+.app-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 200vh;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Font Classes */
+.font-lota {
+  font-family: 'Lota', 'Lato', sans-serif;
+}
+
+/* Add this to your existing index.css file */
+html {
+  scroll-behavior: smooth;
+}
+
+/* For Safari and other browsers that don't support scroll-behavior */
+@supports not (scroll-behavior: smooth) {
+  html {
+    overflow: auto;
+  }
+}
